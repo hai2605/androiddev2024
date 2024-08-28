@@ -11,46 +11,54 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class WeatherActivity extends AppCompatActivity {
     private static final String Tag = "WeatherActivity";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        ForecastFragment forecastFragment = new ForecastFragment();
+        getSupportFragmentManager().beginTransaction().add(
+                R.id.main, forecastFragment).commit();
         setContentView(R.layout.activity_main);
-        Log.i(Tag,"Create");
+        Log.i(Tag, "Create");
     }
 
     @Override
-    protected void onStart(){
+    protected void onStart() {
         super.onStart();
-        Log.i(Tag,"Start");
+        Log.i(Tag, "Start");
 
     }
 
     @Override
-    protected void onResume(){
+    protected void onResume() {
         super.onResume();
-        Log.i(Tag,"Resume");
+        Log.i(Tag, "Resume");
 
     }
 
     @Override
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
-        Log.i(Tag,"Pause");
+        Log.i(Tag, "Pause");
 
     }
 
     @Override
-    protected void onStop(){
-        Log.i(Tag,"Stop");
+    protected void onStop() {
+        Log.i(Tag, "Stop");
         super.onStop();
 
     }
 
     @Override
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
-        Log.i(Tag,"Destroy");
+        Log.i(Tag, "Destroy");
 
     }
+
+
+
+
 }
