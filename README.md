@@ -12,5 +12,5 @@ Student Info
 
 * Name: Nguyễn Đình Hải
 * ID: BA12-068
-* Group ID: 
-* Project Name: 
+* Group ID: 7
+* Project Name: Wordpress Client
