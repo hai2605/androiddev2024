@@ -8,19 +8,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
+import com.google.android.material.tabs.TabLayout;
 
 public class WeatherActivity extends AppCompatActivity {
     private static final String Tag = "WeatherActivity";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        ForecastFragment forecastFragment = new ForecastFragment();
-//
-//        getSupportFragmentManager().beginTransaction().add(
-//                R.id.main, forecastFragment).commit();
         setContentView(R.layout.activity_main);
+
+        HomeFragmentPagerAdapter adapter = new HomeFragmentPagerAdapter(getSupportFragmentManager());
+
+
+        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        pager.setOffscreenPageLimit(3);
+        pager.setAdapter(adapter);
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.tab);
+        tabLayout.setupWithViewPager(pager);
 
         Log.i(Tag, "Create");
     }
