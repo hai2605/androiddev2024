@@ -20,20 +20,20 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Mon" />
+            android:text="@string/mon" />
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/cloudy"
-            app:tint="#FF0000"/>
+            app:tint="@color/red"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Partly cloudy&#10;24C-31C" />
+            android:text="@string/partly_cloudy_10_24c_31c" />
     </LinearLayout>
 
     <LinearLayout
@@ -46,20 +46,20 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Tue"/>
+            android:text="@string/tue"/>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/rainy"
-            app:tint="#FF0000"/>
+            app:tint="@color/red"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Showers &#10; 24C-30C"/>
+            android:text="@string/showers_10_24c_30c"/>
     </LinearLayout>
 
     <LinearLayout
@@ -72,20 +72,20 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Wed"/>
+            android:text="@string/wed"/>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/rainy"
-            app:tint="#FF0000"/>
+            app:tint="@color/red"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Rain &#10; 22C-23C"/>
+            android:text="@string/rain_10_22c_23c"/>
     </LinearLayout>
 
     <LinearLayout
@@ -98,20 +98,20 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Thu"/>
+            android:text="@string/thu"/>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/sun_and_rain"
-            app:tint="#FF0000"/>
+            app:tint="@color/red"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Scattered Showers &#10; 22C-27C"/>
+            android:text="@string/scattered_showers_10_22c_27c"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -123,20 +123,20 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Fri"/>
+            android:text="@string/fri"/>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/cloudy"
-            app:tint="#FF0000"/>
+            app:tint="@color/red"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Mostly Cloudy &#10; 22C-30C"/>
+            android:text="@string/mostly_cloudy_10_22c_30c"/>
     </LinearLayout>
 
     <LinearLayout
@@ -149,20 +149,20 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Sat"/>
+            android:text="@string/sat"/>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/cloudy"
-            app:tint="#FF0000"/>
+            app:tint="@color/red"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Partly cloudy &#10; 24C-31C" />
+            android:text="@string/partly_cloudy_10_24c_31c" />
     </LinearLayout>
 
     <LinearLayout
@@ -175,20 +175,20 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Sun"/>
+            android:text="@string/sun"/>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/thunderstorm"
-            app:tint="#FF0000"/>
+            app:tint="@color/red"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Thunderstorm &#10; 25C-28C"/>
+            android:text="@string/thunderstorm_10_25c_28c"/>
     </LinearLayout>
 
     <LinearLayout
@@ -201,20 +201,20 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Mon"/>
+            android:text="@string/mon"/>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/sun_and_rain"
-            app:tint="#FF0000"/>
+            app:tint="@color/red"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Scattered Thunderstorm &#10; 24C-27C"/>
+            android:text="@string/scattered_thunderstorm_10_24c_27c"/>
     </LinearLayout>
 
     <LinearLayout
@@ -227,20 +227,20 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Tue"/>
+            android:text="@string/tue"/>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/rainy"
-            app:tint="#FF0000"/>
+            app:tint="@color/red"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Showers &#10; 24C-26C"/>
+            android:text="@string/showers_10_24c_26c"/>
     </LinearLayout>
 
     <LinearLayout
@@ -253,20 +253,20 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Wed"/>
+            android:text="@string/wed"/>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/sun_and_rain"
-            app:tint="#FF0000"/>
+            app:tint="@color/red"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Scattered Thunderstorm &#10; 23C-27C"/>
+            android:text="@string/scattered_thunderstorm_10_23c_27c"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -1,5 +1,22 @@
 <resources>
     <string name="app_name">USTH Weather</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="usth_weather">USTH Weather</string>
+    <string name="mon">Thứ 2</string>
+    <string name="partly_cloudy_10_24c_31c">Ít mây\n24C-31C</string>
+    <string name="tue">Thứ 3</string>
+    <string name="showers_10_24c_30c">Mưa rào \n 24C-30C</string>
+    <string name="wed">Thứ 4</string>
+    <string name="rain_10_22c_23c">Mưa \n 22C-23C</string>
+    <string name="thu">Thứ 5</string>
+    <string name="scattered_showers_10_22c_27c">Mưa rào rải rác \n 22C-27C</string>
+    <string name="fri">Thứ 6</string>
+    <string name="mostly_cloudy_10_22c_30c">Nhiều mây \n 22C-30C</string>
+    <string name="sat">Thứ 7</string>
+    <string name="sun">Chủ nhật</string>
+    <string name="thunderstorm_10_25c_28c">giông bão \n 25C-28C</string>
+    <string name="scattered_thunderstorm_10_24c_27c">Cơn giông rải rác \n 24C-27C</string>
+    <string name="showers_10_24c_26c">Mưa rào \n 24C-26C</string>
+    <string name="scattered_thunderstorm_10_23c_27c">Cơn giông rải rác \n 23C-27C</string>
+    <string name="_12c_10_cloudy">12C \nNhiều mây</string>
+    <string name="paris">Paris</string>
 </resources>
