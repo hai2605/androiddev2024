@@ -77,15 +77,15 @@ public class WeatherActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    final Handler handler = new Handler(Looper.getMainLooper()) {
-        @Override
-        public void handleMessage(Message msg) {
-            String content = msg.getData().getString("server_response");
-            Toast.makeText(WeatherActivity.this, content, Toast.LENGTH_SHORT).show();
-        }
-    };
-
     private void simulateNetworkRequest() {
+        final Handler handler = new Handler(Looper.getMainLooper()) {
+            @Override
+            public void handleMessage(Message msg) {
+                String content = msg.getData().getString("server_response");
+                Toast.makeText(WeatherActivity.this, content, Toast.LENGTH_SHORT).show();
+            }
+        };
+
         Thread t = new Thread(new Runnable() {
             @Override
             public void run() {
