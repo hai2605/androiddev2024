@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -48,6 +51,8 @@ public class WeatherActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        extractFile();
+
         Log.i(Tag, "Create");
     }
 
@@ -62,6 +67,7 @@ public class WeatherActivity extends AppCompatActivity {
         int id = item.getItemId();
         if (id == R.id.refresh_button) {
             Toast.makeText(this, "Refreshing", Toast.LENGTH_SHORT).show();
+            simulateNetworkRequest();
             return true;
         } else if (id == R.id.setting_button) {
             Intent intent = new Intent(this, PrefActivity.class);
@@ -71,11 +77,41 @@ public class WeatherActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void extractAndPlayMusic() {
+    final Handler handler = new Handler(Looper.getMainLooper()) {
+        @Override
+        public void handleMessage(Message msg) {
+            String content = msg.getData().getString("server_response");
+            Toast.makeText(WeatherActivity.this, content, Toast.LENGTH_SHORT).show();
+        }
+    };
+
+    private void simulateNetworkRequest() {
+        Thread t = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(2000);
+                }
+                catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                Bundle bundle = new Bundle();
+                bundle.putString("server_response", "some sample json here");
+
+                Message msg = new Message();
+                msg.setData(bundle);
+                handler.sendMessage(msg);
+            }
+        });
+        t.start();
+    }
+
+    private void extractFile() {
         File musicFile = new File(Environment.getExternalStorageDirectory(), "example.mp3");
         if (!musicFile.exists()) {
             try {
-                InputStream is = getResources().openRawResource(R.raw.example);  // Replace 'sample' with your MP3 file name
+                InputStream is = getResources().openRawResource(R.raw.example);
                 FileOutputStream fos = new FileOutputStream(musicFile);
                 byte[] buffer = new byte[1024];
                 int length;
